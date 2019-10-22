@@ -168,6 +168,13 @@ class User extends Authenticatable implements JWTSubject
 
         
         return $user;
+    }    
+
+    /******* Helpers *******/    
+
+    public function getImageUrl($image): string
+    {
+        return url('static/avatars/'.$image);
     }
     /******* Relations *******/
     /******* Properties *******/
